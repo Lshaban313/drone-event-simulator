@@ -4,7 +4,7 @@ A Python console-based simulator for planning a single UAV’s route on a 2D gri
 
 ---
 
-## 📋 Features
+##  Features
 
 - **Custom Grid Layout**  
   - `G` = Free (green)  
@@ -32,7 +32,7 @@ A Python console-based simulator for planning a single UAV’s route on a 2D gri
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -45,3 +45,20 @@ A Python console-based simulator for planning a single UAV’s route on a 2D gri
    ```
    git clone https://github.com/<your-username>/drone-event-simulator.git
    cd drone-event-simulator
+ 
+
+## Extending & Customizing
+
+- **Sensor Model**  
+  Tweak `neighbor_detection_factor` or add diagonal neighbors with their own probability multipliers.
+
+- **Multi-Drone Support**  
+  Instantiate multiple `Drone` objects and coordinate them via a shared planner or task allocator.
+
+- **Dynamic Events**  
+  Update the `events` dictionary mid-mission to simulate spreading or disappearing fires.
+
+- **Visualization**  
+  Plug in Matplotlib, Pygame, or Tkinter to replace the ASCII output with a real GUI.
+
+---
